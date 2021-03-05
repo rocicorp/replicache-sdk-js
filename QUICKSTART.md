@@ -32,7 +32,7 @@ Add a `/replicache-client-view` endpoint to your API server that responds to HTT
 
 You can put any key/value pairs you want in the `"clientView"` section.
 
-For more details on implementing your Client View, see [Client View Setup](https://github.com/rocicorp/replicache/blob/main/SERVER_SETUP.md#step-1-downstream-sync).
+For more details on implementing your Client View, see [Client View Setup](https://github.com/rocicorp/replicache/blob/stable/SERVER_SETUP.md#step-1-downstream-sync).
 
 You can also skip this step for now, and just use our sample backend instead. See [replicache-echo-backend](https://github.com/rocicorp/replicache-echo-backend).
 
@@ -160,7 +160,7 @@ Replicache polls your Client View on a timer and updates the UI automatically.
 
 Notes:
 
-- In production, you can use our hosted Diff Server instead of a local one. See [Create Hosted Diff Server Account](https://github.com/rocicorp/replicache/blob/main/SERVER_SETUP.md#if-your-client-view-is-publicly-accessible) for details.
+- In production, you can use our hosted Diff Server instead of a local one. See [Create Hosted Diff Server Account](https://github.com/rocicorp/replicache/blob/stable/SERVER_SETUP.md#if-your-client-view-is-publicly-accessible) for details.
 - You can adjust the frequency of the polling using the [syncInterval](https://js.replicache.dev/interfaces/replicacheoptions.html#syncinterval) property. However, polling is typically only used for development. In production, we recommend using a [WebSocket poke](TODO) to tell the client when to sync.
 
 ## 🏎 Batch Endpoint
@@ -193,7 +193,7 @@ Otherwise, add a `/replicache-batch` endpoint to your API server that accepts an
 }
 ```
 
-See [Replicache Upstream Sync](https://github.com/rocicorp/replicache/blob/main/SERVER_SETUP.md#step-4-upstream-sync) for instructions on how to implement this endpoint.
+See [Replicache Upstream Sync](https://github.com/rocicorp/replicache/blob/stable/SERVER_SETUP.md#step-4-upstream-sync) for instructions on how to implement this endpoint.
 
 ### 🛫 Client-Side Mutations
 
